@@ -1,7 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+//Modulos de desarrollo
 import { AppRoutingModule } from './app-routing.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import {AngularFireModule} from '@angular/fire/compat'
+
+//Componentes
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { PrincipalComponent } from './components/principal/principal.component';
@@ -12,6 +17,8 @@ import { RecuperarContraComponent } from './components/recuperar-contra/recupera
 import { NoEncontradaComponent } from './components/no-encontrada/no-encontrada.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { MateriasComponent } from './components/materias/materias.component';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [
@@ -28,7 +35,9 @@ import { MateriasComponent } from './components/materias/materias.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
