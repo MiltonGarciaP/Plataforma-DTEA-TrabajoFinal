@@ -11,7 +11,7 @@ import { VerificarCorreoComponent } from './components/verificar-correo/verifica
 const routes: Routes = [
  {path:'', redirectTo:'login',pathMatch:'full'},
  {path:'login', component: LoginComponent},
- {path:'registrar-usuario', component: RegistrarUsuarioComponent},
+ {path:'registrar', component: RegistrarUsuarioComponent},
  {path:'verificar-correo', component: VerificarCorreoComponent},
  {path:'recuperar-contraseña', component: RecuperarContraComponent},
  {path:'principal', component: RegistrarUsuarioComponent},

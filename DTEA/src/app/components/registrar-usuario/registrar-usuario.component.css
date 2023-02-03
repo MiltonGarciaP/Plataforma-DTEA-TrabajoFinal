@@ -1,0 +1,25 @@
+.wrapper 
+{
+display: flex;
+align-items: center;
+justify-content: center;
+background-image: url(../../../assets/img/SL_031721_41490_35.jpg);
+height: 100%;
+
+}
+
+.logo
+{
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.body
+{
+    width: 100%;
+    max-width: 330px;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+
+}
