@@ -13,7 +13,7 @@ const routes: Routes = [
  {path:'login', component: LoginComponent},
  {path:'registrar', component: RegistrarUsuarioComponent},
  {path:'verificar-correo', component: VerificarCorreoComponent},
- {path:'recuperar-contraseña', component: RecuperarContraComponent},
+ {path:'recuperar', component: RecuperarContraComponent},
  {path:'principal', component: RegistrarUsuarioComponent},
  {path:'404', component: NoEncontradaComponent},
  {path:'nosotros', component: NosotrosComponent},
