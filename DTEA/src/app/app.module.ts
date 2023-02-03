@@ -10,6 +10,7 @@ import { VerificarCorreoComponent } from './components/verificar-correo/verifica
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { RecuperarContraComponent } from './components/recuperar-contra/recuperar-contra.component';
 import { NoEncontradaComponent } from './components/no-encontrada/no-encontrada.component';
+import { NosotrosComponent } from './components/nosotros/nosotros.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { NoEncontradaComponent } from './components/no-encontrada/no-encontrada.
     VerificarCorreoComponent,
     SpinnerComponent,
     RecuperarContraComponent,
-    NoEncontradaComponent
+    NoEncontradaComponent,
+    NosotrosComponent
   ],
   imports: [
     BrowserModule,
