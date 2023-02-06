@@ -4,6 +4,7 @@ import { LoginComponent } from './components/login/login.component';
 import { MateriasComponent } from './components/materias/materias.component';
 import { NoEncontradaComponent } from './components/no-encontrada/no-encontrada.component';
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
+import { PrincipalComponent } from './components/principal/principal.component';
 import { RecuperarContraComponent } from './components/recuperar-contra/recuperar-contra.component';
 import { RegistrarUsuarioComponent } from './components/registrar-usuario/registrar-usuario.component';
 import { VerificarCorreoComponent } from './components/verificar-correo/verificar-correo.component';
@@ -14,7 +15,7 @@ const routes: Routes = [
  {path:'registrar', component: RegistrarUsuarioComponent},
  {path:'verificar-correo', component: VerificarCorreoComponent},
  {path:'recuperar', component: RecuperarContraComponent},
- {path:'principal', component: RegistrarUsuarioComponent},
+ {path:'principal', component: PrincipalComponent},
  {path:'404', component: NoEncontradaComponent},
  {path:'nosotros', component: NosotrosComponent},
  {path:'materias', component: MateriasComponent},
