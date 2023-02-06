@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CorreoComponent } from './components/correo/correo.component';
 import { LoginComponent } from './components/login/login.component';
 import { MateriasComponent } from './components/materias/materias.component';
 import { NoEncontradaComponent } from './components/no-encontrada/no-encontrada.component';
@@ -19,6 +20,7 @@ const routes: Routes = [
  {path:'404', component: NoEncontradaComponent},
  {path:'nosotros', component: NosotrosComponent},
  {path:'materias', component: MateriasComponent},
+ {path:'correo', component: CorreoComponent},
  {path:'**', redirectTo:'404',pathMatch:'full'},
  
 ];

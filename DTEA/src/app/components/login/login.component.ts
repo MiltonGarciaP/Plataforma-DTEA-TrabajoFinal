@@ -35,17 +35,31 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
   this.loading = true;
     this.afAuth.signInWithEmailAndPassword(correo,contraseña).then((user) =>{
       console.log(user);
-      this.loading = false;
-      Swal.fire({
+      if (user.user?.emailVerified)
+      {
+         this.loading = false;
+        Swal.fire({
         position: 'top-end',
         icon: 'success',
         title: 'Ha iniciado sección correctamente',
         showConfirmButton: false,
         timer: 1500
 
-       })//Swal
-      this.router.navigate(['principal'])
+          })//Swal
+          this.router.navigate(['principal']) 
 
+      }else
+      {
+        Swal.fire({
+          position: 'center',
+          icon: 'error',
+          title: "Debe verificar su correo",
+          showConfirmButton: false,
+          timer : 2000
+        })
+        this.router.navigate(['correo'])
+      }
+      
     }).catch((error)=> {
       console.log(error);
       this.loading = false;

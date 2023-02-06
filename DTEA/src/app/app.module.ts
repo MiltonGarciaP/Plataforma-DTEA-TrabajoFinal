@@ -20,6 +20,7 @@ import { NoEncontradaComponent } from './components/no-encontrada/no-encontrada.
 import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { MateriasComponent } from './components/materias/materias.component';
 import { environment } from 'src/environments/environment';
+import { CorreoComponent } from './components/correo/correo.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { environment } from 'src/environments/environment';
     RecuperarContraComponent,
     NoEncontradaComponent,
     NosotrosComponent,
-    MateriasComponent
+    MateriasComponent,
+    CorreoComponent
   ],
   imports: [
     BrowserModule,

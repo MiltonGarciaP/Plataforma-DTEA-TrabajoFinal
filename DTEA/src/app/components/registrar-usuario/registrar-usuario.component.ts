@@ -56,16 +56,9 @@ registrar()
   .createUserWithEmailAndPassword(email,contraseña)
   .then((user) => {
 
+    
    this.loading = false;
-    Swal.fire({
-      position: 'top-end',
-      icon: 'success',
-      title: 'Se ha registrado correctamente',
-      showConfirmButton: false,
-      timer: 1500
-     })//Swal
-
-    this.router.navigate(['/login'])
+    this.verificarcorreo();
     
   }).catch((error) => {
     this.loading = false;
@@ -79,6 +72,20 @@ registrar()
     
 } 
 
+verificarcorreo()
+{
+  this.afAuth.currentUser.then(user => user?.sendEmailVerification()).then(() =>{
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Se ha registrado correctamente',
+      showConfirmButton: false,
+      footer: "Se le ha enviado un email a su correo para verificarlo",
+      timer: 2500
+     })//Swal
+    this.router.navigate(['/login'])
+  });
+}
 
 firebaseError(code: string)
 {
@@ -106,5 +113,7 @@ firebaseError(code: string)
 
   }
 }
+
+
 
 }
