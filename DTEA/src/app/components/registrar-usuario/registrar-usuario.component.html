@@ -1,9 +1,9 @@
-<div class="wrapper">
+<div *ngIf="!loading"  class="wrapper">
     <div class="body">
      <img class="logo" src="../../../assets/img/registrar.png" alt="Inicio de Sección">
      <h1>Registro Usuario</h1>
    
-    <form (ngSubmit)="registrar()" [formGroup]="registrarUsuario">
+    <form  (ngSubmit)="registrar()" [formGroup]="registrarUsuario">
         <div class="form-floating mb-3">
             <input type="text" class="form-control" formControlName="nombre"  placeholder="Milton Tarsian " required>
             <label >Nombre</label>
@@ -39,4 +39,6 @@
          
     </form>
     </div>
+    
    </div>
+   <app-spinner *ngIf="loading"></app-spinner>

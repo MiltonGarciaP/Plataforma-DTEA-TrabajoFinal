@@ -13,6 +13,7 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class RegistrarUsuarioComponent {
 registrarUsuario : FormGroup;
+loading : boolean = false;
 
 constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , private router : Router ,private toastr: ToastrService)
 {
@@ -50,11 +51,12 @@ registrar()
 
  }
 
+ this.loading = true;
   this.afAuth
   .createUserWithEmailAndPassword(email,contraseña)
   .then((user) => {
 
-   
+   this.loading = false;
     Swal.fire({
       position: 'top-end',
       icon: 'success',
@@ -66,6 +68,7 @@ registrar()
     this.router.navigate(['/login'])
     
   }).catch((error) => {
+    this.loading = false;
     Swal.fire({
       position: 'center',
       icon: 'error',
