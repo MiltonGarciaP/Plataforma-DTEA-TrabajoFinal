@@ -18,7 +18,7 @@ export class RecuperarContraComponent implements OnInit {
   {
     this.recuperarU = this.fb.group({
 
-      correo:['',Validators.required]
+      correo:['',[Validators.required, Validators.email]]
     })
 
   }
