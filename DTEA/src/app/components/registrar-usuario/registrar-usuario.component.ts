@@ -21,9 +21,9 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
   this.registrarUsuario = this.fb.group({
     nombre: ["", Validators.required],
     apellido: ["", Validators.required],
-    email: ["", Validators.required],
-    contraseña: ["", Validators.required],
-    repetircontraseña: ["", Validators.required]
+    email: ["", [Validators.required , Validators.email]], 
+    contraseña: ["", [Validators.required , Validators.minLength(6)]],
+    repetircontraseña: ["",[ Validators.required,Validators.minLength(6)] ]
   })
 }
 
@@ -78,14 +78,6 @@ registrar()
   })
     
 } 
-
-  
-
-
-
-
-  
-
 
 
 firebaseError(code: string)

@@ -17,8 +17,8 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
 {
 
   this.loginUsuario = this.fb.group({
-    email: ['',Validators.required],
-    contraseña: ['',Validators.required]
+    email: ['',[Validators.required, Validators.email]],
+    contraseña: ['', [Validators.required, Validators.minLength(6)]]
   })
 }
 
