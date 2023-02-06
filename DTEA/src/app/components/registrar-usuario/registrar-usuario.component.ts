@@ -1,8 +1,11 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import {AngularFireAuth} from '@angular/fire/compat/auth'
-import { UrlSerializer } from '@angular/router';
+
+
 import Swal from 'sweetalert2';
+import { Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 @Component({
   selector: 'app-registrar-usuario',
   templateUrl: './registrar-usuario.component.html',
@@ -11,7 +14,7 @@ import Swal from 'sweetalert2';
 export class RegistrarUsuarioComponent {
 registrarUsuario : FormGroup;
 
-constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth)
+constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , private router : Router ,private toastr: ToastrService)
 {
  
   this.registrarUsuario = this.fb.group({
@@ -32,33 +35,54 @@ registrar()
   const nombre = this.registrarUsuario.value.nombre;
   const apellido = this.registrarUsuario.value.apellido;
   const contraseña = this.registrarUsuario.value.contraseña;
-  const repetircontraseña = this.registrarUsuario.value.contraseña;
+  const repetircontraseña = this.registrarUsuario.value.repetircontraseña;
 
-  if(contraseña != repetircontraseña){
-    Swal.fire({
-      icon: 'error',
-      title: 'Un error',
-      text: "La contraseñas deben ser la mismas"
-      
-    })
-    return;
-  }
+ if(contraseña != repetircontraseña )
+ {
+  Swal.fire({
+    position: 'center',
+    icon: 'error',
+    title: 'Las contraseñas deben ser iguales',
+    showConfirmButton: true,
   
-  this.afAuth.createUserWithEmailAndPassword(email, contraseña).then((user)=> {
-   console.log(user);
-  }).catch((error) =>{
-    console.log(error);
-    Swal.fire({
-      icon: 'error',
-      title: 'Un error',
-      text: this.firebaseError(error.code)
-      
-    })
+ })
+ return;
+
+ }
+
+  this.afAuth
+  .createUserWithEmailAndPassword(email,contraseña)
+  .then((user) => {
+
    
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Se ha registrado correctamente',
+      showConfirmButton: false,
+      timer: 1500
+     })//Swal
+
+    this.router.navigate(['/login'])
+    
+  }).catch((error) => {
+    Swal.fire({
+      position: 'center',
+      icon: 'error',
+      title: this.firebaseError(error.code),
+      showConfirmButton: true,
+    })
   })
+    
+} 
+
   
 
-}
+
+
+
+  
+
 
 
 firebaseError(code: string)
@@ -75,6 +99,10 @@ firebaseError(code: string)
 
       case 'auth/invalid-email':
       return 'No es un correo valido'
+
+      case 'auth/invalid-password':
+        
+      return'La contraseña debe de ser de mas de 6 caracteres'
 
     default:
       return 'Error desconocido';
