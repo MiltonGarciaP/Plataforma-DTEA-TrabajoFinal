@@ -21,6 +21,7 @@ import { NosotrosComponent } from './components/nosotros/nosotros.component';
 import { MateriasComponent } from './components/materias/materias.component';
 import { environment } from 'src/environments/environment';
 import { CorreoComponent } from './components/correo/correo.component';
+import { PerfilComponent } from './components/perfil/perfil.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CorreoComponent } from './components/correo/correo.component';
     NoEncontradaComponent,
     NosotrosComponent,
     MateriasComponent,
-    CorreoComponent
+    CorreoComponent,
+    PerfilComponent
   ],
   imports: [
     BrowserModule,
