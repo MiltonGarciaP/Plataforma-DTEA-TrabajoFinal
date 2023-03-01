@@ -4,6 +4,7 @@ import {AngularFireAuth} from '@angular/fire/compat/auth'
 import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
