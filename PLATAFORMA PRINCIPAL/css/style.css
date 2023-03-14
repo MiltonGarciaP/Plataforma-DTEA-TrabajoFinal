@@ -152,7 +152,7 @@ sup {
 }
 
 a {
-  color: #17a2b8;
+  color: #ffc107;
   text-decoration: none;
   background-color: transparent;
 }
@@ -2372,14 +2372,14 @@ fieldset:disabled a.btn {
 
 .btn-primary {
   color: #fff;
-  background-color: #17a2b8;
-  border-color: #17a2b8;
+  background-color: #ffc107;
+  border-color: #ffc107;
 }
 
 .btn-primary:hover {
   color: #fff;
-  background-color: #138496;
-  border-color: #117a8b;
+  background-color: #dba607;
+  border-color: #dba607;
 }
 
 .btn-primary:focus, .btn-primary.focus {
@@ -6272,15 +6272,13 @@ a.close.disabled {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
-  z-index: 10;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: #fff;
   text-align: center;
 }
+
 
 @keyframes spinner-border {
   to {
@@ -6356,7 +6354,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #17a2b8 !important;
+  background-color: #ffc107 !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -6416,7 +6414,7 @@ button.bg-danger:focus {
 }
 
 .bg-light {
-  background-color: #f8f9fa !important;
+  background-color: #f8f9fa  !important;
 }
 
 a.bg-light:hover, a.bg-light:focus,
@@ -9719,7 +9717,7 @@ a.text-dark:hover, a.text-dark:focus {
   display: inline-block;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #17a2b8;
+  color: #ffc107;
 }
 
 .section-title span {
@@ -9766,7 +9764,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .navbar-light .navbar-nav .nav-link {
   padding: 30px 15px;
-  color: #00394f;
+  color: #ffc107;
   outline: none;
 }
 
@@ -9802,8 +9800,8 @@ a.text-dark:hover, a.text-dark:focus {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #00394f;
-  background: #17a2b8;
+  color: #ffc107;
+  background: #ffc107;
   border-radius: 30px;
   font-size: 18px;
   opacity: .1;
@@ -9863,4 +9861,49 @@ a.text-dark:hover, a.text-dark:focus {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+/*SLIDER*/
+.two-image-slider {
+  margin-top: 2rem;
+}
+
+.two-image-slide {
+  position: relative;
+  height: 600px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.two-image-slide img {
+  display: none;
+}
+
+.two-image-slide:nth-child(odd) {
+  background-image: url(img/fondoBg1.jpg);
+}
+
+.two-image-slide:nth-child(even) {
+  background-image: url(img/fondoBg2.webp);
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  text-align: center;
+  color: white;
+}
+
+.overlay h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.overlay p {
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
