@@ -1,0 +1,45 @@
+.Lengua
+{
+    background-color: silver;
+}
+
+.Sociales
+{
+    background-color: white;
+}
+
+.Naturales
+{
+    background-color: silver;
+}
+
+.Matematicas
+{
+    background-color: white;
+}
+
+h1
+{
+    text-align: center;
+
+}
+
+.tmatematicas
+{
+    color: red;
+}
+
+.tnaturales
+{
+    color: green;
+}
+
+.tsociales
+{
+    color: orangered;
+}
+
+.tlengua
+{
+    color: blue;
+}
