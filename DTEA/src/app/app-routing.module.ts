@@ -9,6 +9,11 @@ import { PrincipalComponent } from './components/principal/principal.component';
 import { RecuperarContraComponent } from './components/recuperar-contra/recuperar-contra.component';
 import { RegistrarUsuarioComponent } from './components/registrar-usuario/registrar-usuario.component';
 import { VerificarCorreoComponent } from './components/verificar-correo/verificar-correo.component';
+import { MatematicasComponent } from './matematicas/matematicas.component';
+import { SocialesComponent } from './sociales/sociales.component';
+import { LenguaComponent } from './lengua/lengua.component';
+import { HistoriaComponent } from './historia/historia.component';
+
 
 const routes: Routes = [
  {path:'', redirectTo:'login',pathMatch:'full'},
@@ -21,7 +26,12 @@ const routes: Routes = [
  {path:'nosotros', component: NosotrosComponent},
  {path:'materias', component: MateriasComponent},
  {path:'correo', component: CorreoComponent},
- {path:'**', redirectTo:'404',pathMatch:'full'},
+ {path:'matematicas', component: MatematicasComponent },
+ {path:'socia', component: SocialesComponent},
+ {path:'lengua', component: LenguaComponent},
+ {path:'ciencia', component: HistoriaComponent},
+ {path:'**', redirectTo:'404',pathMatch:'full'}
+ 
  
 ];
 

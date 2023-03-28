@@ -1,26 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inicio - Mi sitio educativo</title>
+	<!-- Agregamos los archivos de CSS de Bootstrap -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+	<style>
+		body {
+			padding-top: 5rem;
+		}
+	</style>
 </head>
 <body>
-    <div class="container">
-        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
-          <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-    
-          <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="#" class="nav-link px-2 link-secondary">Home</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Features</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">Pricing</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">FAQs</a></li>
-            <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
-          </ul>
-        </header>
-      </div>
-</body>
-</html>
+	<!-- Creamos el menú de navegación -->
+	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+		<a class="navbar-brand" href="#">DTEA</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarCollapse">
+		</div>
+	</nav>
+
+	<div class="container">
+		<section id="matematicas">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Matemáticas</h2>
+					<p>En esta sección encontrarás información sobre matemáticas, sus características y aplicaciones.</p>
+					<ul>
+						<li>Álgebra</li>
+						<li>Geometría</li>
+						<li>Aritmética</li>
+					</ul>
+					
+				</div>
+				<div class="col-md-6">
+					<img src="https://via.placeholder.com/500x350.png?text=Imagen+de+matemáticas" alt="Imagen de matemáticas" class="img-fluid">
+				</div>
+			</div>
+		</section>
+
+		<section id="naturales">
+			<div class="row">
+				<div class="col-md-6">
+					<h2>Ciencias naturales</h2>
+					<p>En esta sección encontrarás información sobre ciencias naturales, sus ramas y aplicaciones.</p>
+					<ul>
+						<li>Física</li>
+						<li>Química</li>
+						<li>Biología</li>
+					</ul>
+					
+				</div>
+				<div class="col-md-6">
+					<img src="https://via.placeholder.com/500x350.png?text=Imagen
+					de ciencias naturales" alt="Imagen de ciencias naturales" class="img-fluid">
+				</div>
+				</div>
+				</section>
+				<section id="espanol">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Lengua española</h2>
+							<p>En esta sección encontrarás información sobre la lengua española, su gramática y ortografía.</p>
+							<ul>
+								<li>Gramática</li>
+								<li>Ortografía</li>
+								<li>Vocabulario</li>
+							</ul>
+							
+						</div>
+						<div class="col-md-6">
+							<img src="https://via.placeholder.com/500x350.png?text=Imagen+de+lengua+española" alt="Imagen de lengua española" class="img-fluid">
+						</div>
+					</div>
+				</section>
+			
+				<section id="sociales">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Ciencias sociales</h2>
+							<p>En esta sección encontrarás información sobre ciencias sociales, su historia y desarrollo.</p>
+							<ul>
+								<li>Historia</li>
+								<li>Economía</li>
+								<li>Sociología</li>
+							</ul>
+							
+						</div>
+						<div class="col-md-6">
+							<img src="https://via.placeholder.com/500x350.png?text=Imagen+de+ciencias+sociales" alt="Imagen de ciencias sociales" class="img-fluid">
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<!-- Agregamos los archivos de JavaScript de Bootstrap -->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+			
+			
