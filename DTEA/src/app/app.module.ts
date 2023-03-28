@@ -22,6 +22,10 @@ import { MateriasComponent } from './components/materias/materias.component';
 import { environment } from 'src/environments/environment';
 import { CorreoComponent } from './components/correo/correo.component';
 import { PerfilComponent } from './components/perfil/perfil.component';
+import { MatematicasComponent } from './matematicas/matematicas.component';
+import { SocialesComponent } from './sociales/sociales.component';
+import { LenguaComponent } from './lengua/lengua.component';
+import { HistoriaComponent } from './historia/historia.component';
 
 
 @NgModule({
@@ -37,7 +41,11 @@ import { PerfilComponent } from './components/perfil/perfil.component';
     NosotrosComponent,
     MateriasComponent,
     CorreoComponent,
-    PerfilComponent
+    PerfilComponent,
+    MatematicasComponent,
+    SocialesComponent,
+    LenguaComponent,
+    HistoriaComponent
   ],
   imports: [
     BrowserModule,
