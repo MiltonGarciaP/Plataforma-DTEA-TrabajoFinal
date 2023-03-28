@@ -19,7 +19,7 @@ export class PrincipalComponent implements OnInit {
   }
   
   ngOnInit(): void {
-    /*
+    
    this.afAuth.currentUser.then(user=> {
     if(user && user.emailVerified )
     {
@@ -38,7 +38,7 @@ export class PrincipalComponent implements OnInit {
     }
 
    })
-   */
+   
   }
 
   logout()
