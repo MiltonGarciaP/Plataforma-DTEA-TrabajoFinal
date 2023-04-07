@@ -21,18 +21,18 @@
 					
 						<a class="nav-link" routerLink="/socia" >Inicio</a>
 						<a class="nav-link"  routerLink="/principal">Principal</a>
-						<a class="nav-link"  routerLink="/Materias">Materias</a>
+						<a class="nav-link"  routerLink="/materias">Materias</a>
 						<a class="nav-link" routerLink="/login">Log In</a>
 						<a class="nav-link" href="">videojuegos</a>
 					
 				
 			</ul>
-			<button (click)="logout()">cerrar sesión</button>
+			<button class="btn btn-dark" (click)="logout()">cerrar sesión</button>
 		</div>
 	</nav>
 
 	<!-- Cabecera -->
-	<header class="bg-light text-center py-5">
+	<header class="Titulo">
 		<h1 class="display-4">Ciencias Naturales</h1>
 		<p class="lead">Descubre el mundo que te rodea a través del estudio de la historia, la geografía y la sociedad.</p>
 	</header>
@@ -43,20 +43,26 @@
 			<!-- Columna de información -->
 			<div class="col-md-8">
 				<h2>¿Qué son las Ciencias Naturales?</h2>
-				<p>Las Ciencias Sociales son un conjunto de disciplinas que estudian el comportamiento humano y las interacciones sociales. Comprenden campos como la historia, la geografía, la economía, la sociología, la psicología social y la antropología, entre otros.</p>
-				<h2>Recursos para aprender Ciencias Naturales</h2>
-				<p>En este proyecto educativo encontrarás recursos para aprender sobre las diferentes áreas de las Ciencias Sociales, incluyendo:</p>
+				<p>
+					Las ciencias naturales son el conjunto de disciplinas que estudian los fenómenos de la naturaleza mediante el método científico. Su objetivo es describir, explicar y predecir las leyes que rigen el comportamiento de la materia, la energía, la vida y el universo. Algunas de las ciencias naturales más importantes son la física, la química, la biología, la geología y la astronomía.</p>
+				
+				<p>El Juego que encontraras es de: </p>
+				<p>La reglas son:</p>
 				<ul>
 					<li>Explicaciones claras y sencillas de conceptos y eventos históricos.</li>
 					<li>Mapas y gráficos para entender mejor la geografía y la sociedad.</li>
 					<li>Ejemplos y estudios de caso para ilustrar los conceptos.</li>
 					<li>Enlaces a recursos adicionales para profundizar en temas específicos.</li>
 				</ul>
+
+				<h2>Ir al videojuego</h2>
+				<button routerLink="/matematicas" type="button" class="btn btn-success">VideoJuego</button>
 			</div>
 			<!-- Columna de imágenes -->
 			<div class="col-md-4">
-				<img src="https://picsum.photos/id/1006/300" alt="Imagen de ejemplo" class="img-fluid">
-                <img src="https://picsum.photos/id/1011/300" alt="Imagen de ejemplo" class="img-fluid mt-3">
+				<img src="../../assets/img/fisica.jpg" alt="Imagen de ejemplo" class="img-fluid mt-3">
+                <img src="../../assets/img/biologia.jpg" alt="Imagen de ejemplo" class="img-fluid mt-3">
+				<img src="../../assets/img/quimica.jpg" alt="Imagen de ejemplo" class="img-fluid mt-3">
                 </div>
                 </div>
                 </main>

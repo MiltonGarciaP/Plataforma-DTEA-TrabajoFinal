@@ -21,17 +21,17 @@
 				
 					<a class="nav-link" routerLink="/matematicas">Inicio</a>
 					<a class="nav-link" routerLink="/principal" >Principal</a>
-					<a class="nav-link"  routerLink="/Materias">Materias</a>
+					<a class="nav-link"  routerLink="/materias">Materias</a>
 					<a class="nav-link" routerLink="/login" >Log In</a>
 					<a class="nav-link" href="" >videojuegos</a>
 				
 			</ul>
-			<button (click)="logout()">cerrar sesión</button>
+			<button class="btn btn-dark" (click)="logout()">cerrar sesión</button>
 		</div>
 	</nav>
 
 	<!-- Cabecera con título y descripción -->
-	<header class="jumbotron jumbotron-fluid">
+	<header class="Titulo">
 		<div class="container">
 			<h1 class="display-4"> Matemáticas</h1>
 			<p class="lead">Aquí encontrarás información y recursos para aprender matemáticas de forma divertida y efectiva.</p>
@@ -44,30 +44,28 @@
 			<!-- Columna de contenido -->
 			<div class="col-md-8">
 				<h2>¿Qué son las matemáticas?</h2>
-				<p>Las matemáticas son una ciencia que se dedica al estudio de los números, las figuras y las relaciones entre ellos. A través de las matemáticas, podemos resolver problemas, hacer predicciones y entender el mundo que nos rodea.</p>
-				<h2>Temas de matemáticas</h2>
-				<p>En nuestro proyecto, encontrarás información y recursos para aprender sobre los siguientes temas:</p>
+				<p>Las matemáticas son una ciencia formal y exacta que, basada en los principios de la lógica, estudia las propiedades y las relaciones que se establecen entre los entes abstractos. Estos entes pueden ser números, símbolos, figuras geométricas, etc. Las matemáticas se dividen en varias ramas, como la aritmética, el álgebra, la geometría y la estadística. Las matemáticas tienen múltiples aplicaciones en diversos campos del conocimiento humano, como la física, la ingeniería, la economía y la medicina.</p>
+				
+				<h2>VideoJuego</h2>
+
+				<p>El Juego que encontraras es de: </p>
+				<p>La reglas son:</p>
 				<ul>
-					<li>Aritmética</li>
-					<li>Álgebra</li>
-					<li>Geometría</li>
-					<li>Trigonometría</li>
-					<li>Cálculo</li>
+					<li>Explicaciones claras y sencillas de conceptos y eventos históricos.</li>
+					<li>Mapas y gráficos para entender mejor la geografía y la sociedad.</li>
+					<li>Ejemplos y estudios de caso para ilustrar los conceptos.</li>
+					<li>Enlaces a recursos adicionales para profundizar en temas específicos.</li>
 				</ul>
-				<h2>Recursos para aprender matemáticas</h2>
-				<p>En nuestra página, encontrarás una variedad de recursos para aprender matemáticas, incluyendo:</p>
-                <ul>
-                <li>Explicaciones claras y sencillas de conceptos matemáticos.</li>
-                <li>Ejemplos resueltos paso a paso.</li>
-                <li>Actividades y ejercicios para practicar lo aprendido.</li>
-                <li>Enlaces a recursos adicionales para profundizar en temas específicos.</li>
-                </ul>
+			
+                <h2>Ir al videojuego</h2>
+				<button routerLink="/matematicas" type="button" class="btn btn-danger">VideoJuego</button>
+
                 </div>
                 <!-- Columna de imágenes -->
                 <div class="col-md-4">
-                <img src="https://picsum.photos/id/1018/300/200" alt="Imagen de matemáticas" class="img-fluid mb-3">
-                <img src="https://picsum.photos/id/1025/300/200" alt="Otra imagen de matemáticas" class="img-fluid mb-3">
-                <img src="https://picsum.photos/id/1020/300/200" alt="Otra imagen de matemáticas" class="img-fluid mb-3">
+                <img src="../../assets/img/division.jpg" alt="Imagen de matemáticas" class="img-fluid mb-3">
+                <img src="../../assets/img/multiplicación.jpg" alt="Otra imagen de matemáticas" class="img-fluid mb-3">
+                <img src="../../assets/img/sumas.jpg" alt="Otra imagen de matemáticas" class="img-fluid mb-3">
                 </div>
                 </div>
                 </main>
