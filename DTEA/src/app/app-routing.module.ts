@@ -16,7 +16,7 @@ import { HistoriaComponent } from './historia/historia.component';
 
 
 const routes: Routes = [
- {path:'', redirectTo:'login',pathMatch:'full'},
+ {path:'', redirectTo:'principal',pathMatch:'full'},
  {path:'login', component: LoginComponent},
  {path:'registrar', component: RegistrarUsuarioComponent},
  {path:'verificar-correo', component: VerificarCorreoComponent},
