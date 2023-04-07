@@ -5,6 +5,8 @@ import Swal from 'sweetalert2';
 import { Router } from '@angular/router';
 import { ToastrService } from 'ngx-toastr';
 
+
+
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -34,7 +36,7 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
     const contraseña = this.loginUsuario.value.contraseña;
 
   this.loading = true;
-    this.afAuth.signInWithEmailAndPassword(correo,contraseña).then((user) =>{
+     this.afAuth.signInWithEmailAndPassword(correo,contraseña).then((user) =>{
       console.log(user);
       if (user.user?.emailVerified)
       {
@@ -47,7 +49,7 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
         timer: 1500
 
           })//Swal
-          this.router.navigate(['principal']) 
+          this.router.navigate(['materias']) 
 
       }else
       {

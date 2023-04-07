@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inicio - Mi sitio educativo</title>
+	<title>Inicio - DTEA - Materias</title>
 	<!-- Agregamos los archivos de CSS de Bootstrap -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
 	<style>
@@ -21,9 +21,11 @@
 		</button>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
 		</div>
+		
+		<button class="btn-dark" (click)="logout()">cerrar sesión</button>
 	</nav>
 
-	<div class="container">
+	<div class="containerM">
 		<section id="matematicas">
 			<div class="row">
 				<div class="col-md-6">
@@ -34,10 +36,12 @@
 						<li>Geometría</li>
 						<li>Aritmética</li>
 					</ul>
-					
+					<p>Si quieres ir a la sección de matematicas dale click al siguiente boton</p>
+					<button routerLink="/matematicas" type="button" class="btn btn-danger">Sesión de matematicas</button>
+
 				</div>
 				<div class="col-md-6">
-					<img src="https://via.placeholder.com/500x350.png?text=Imagen+de+matemáticas" alt="Imagen de matemáticas" class="img-fluid">
+					<img src="../../../assets/img/mate.jpg" alt="Imagen de matemáticas" class="img-fluid">
 				</div>
 			</div>
 		</section>
@@ -53,10 +57,10 @@
 						<li>Biología</li>
 					</ul>
 					
+					<button routerLink="/socia" type="button" class="btn btn-success">Ir a ciencias naturales</button>
 				</div>
 				<div class="col-md-6">
-					<img src="https://via.placeholder.com/500x350.png?text=Imagen
-					de ciencias naturales" alt="Imagen de ciencias naturales" class="img-fluid">
+					<img src="../../../assets/img/naturales.jpg" alt="Imagen de ciencias naturales" class="img-fluid">
 				</div>
 				</div>
 				</section>
@@ -71,9 +75,11 @@
 								<li>Vocabulario</li>
 							</ul>
 							
+							<p>Ir a la seccion de lengua española </p>
+							<button routerLink="/lengua" type="button" class="btn btn-primary">Ir a Lengua española</button>
 						</div>
 						<div class="col-md-6">
-							<img src="https://via.placeholder.com/500x350.png?text=Imagen+de+lengua+española" alt="Imagen de lengua española" class="img-fluid">
+							<img src="../../../assets/img/lengua.jpg" alt="Imagen de lengua española" class="img-fluid">
 						</div>
 					</div>
 				</section>
@@ -89,9 +95,10 @@
 								<li>Sociología</li>
 							</ul>
 							
+							<button routerLink="/ciencia" type="button" class="btn btn-warning">Ir a ciencias sociales </button>
 						</div>
 						<div class="col-md-6">
-							<img src="https://via.placeholder.com/500x350.png?text=Imagen+de+ciencias+sociales" alt="Imagen de ciencias sociales" class="img-fluid">
+							<img src="../../../assets/img/sociales.jpg" alt="Imagen de ciencias sociales" class="img-fluid">
 						</div>
 					</div>
 				</section>
