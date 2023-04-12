@@ -27,9 +27,16 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
 
 
   ngOnInit(): void {
-   
-  }
+    this.afAuth.signOut().then(()=> this.router.navigate(['login']))
+    Swal.fire({
+      position: 'top-end',
+      icon: 'success',
+      title: 'Ha cerrado sesion correctamente',
+      showConfirmButton: false,
+      timer: 1500
+  })
 
+  }
   login()
   {
     const correo = this.loginUsuario.value.email;
