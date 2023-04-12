@@ -1,111 +1,151 @@
+
+			
+			
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Inicio - DTEA - Materias</title>
-	<!-- Agregamos los archivos de CSS de Bootstrap -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-	<style>
-		body {
-			padding-top: 5rem;
-		}
-	</style>
-</head>
-<body>
-	<!-- Creamos el menú de navegación -->
-	<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-		<img class="logo" src="../../../assets/img/LOGO.jpg" alt="">
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarCollapse">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Página principal - Mi plataforma educativa</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+    <!-- Estilos personalizados -->
+    <style>
+      .carousel-item {
+        height: 90vh;
+        min-height: 350px;
+        background: no-repeat center center scroll;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+      }
+
+      .card {
+        border: none;
+        border-radius: 1rem;
+        margin: 1rem;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateY(-0.5rem);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Menú -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img
+          src="../../../assets/img/LOGO.jpg"
+          width="100"
+          height="50"
+          class="d-inline-block align-top"
+          alt="Logo de la plataforma"
+        />
+        Pagina de Materias
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cerrar sesión</a>
+
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+	<div class="banner-container">
+		<img class="banner-img" src="../../../assets/img/fondo.gif" alt="Banner de ejemplo">
+		<div class="banner-info">
+		  <h2>Bienvenido al plataforma DTEA</h2>
+		  <p>La plataforma digital para el aprendizaje de los niños</p>
 		</div>
+	  </div>
+	  
+		  
+	  
+<!-- Sección 1 -->
+<section class="container my-5">
+	<div class="row">
+	  <div class="col-md-6">
+		<img src="../../../assets/img/gifmatematicas.gif" alt="Matemáticas" class="img-fluid">
+	  </div>
+	  <div class="col-md-6">
+		<h2>Matemáticas</h2>
+		<p>En esta sección encontrarás juegos y actividades para aprender matemáticas de una manera divertida y dinámica. Podrás repasar temas como operaciones básicas, fracciones, geometría, y mucho más. ¡Aprender matemáticas nunca fue tan divertido!</p>
+		<a routerLink="/matematicas" class="btn btn-danger">Ir a la sección de matemáticas</a>
+	  </div>
+	</div>
+  </section>
+  
+  <!-- Sección 2 -->
+  <section class="container my-5">
+	<div class="row">
+	  <div class="col-md-6 order-md-2">
+		<img src="../../../assets/img/gifgramatica.gif" alt="Española" class="img-fluid">
+	  </div>
+	  <div class="col-md-6 order-md-1">
+		<h2>Lengua Española</h2>
+		<p>En esta sección encontrarás juegos y actividades para aprender Lengua Española de una manera divertida y dinámica. Podrás repasar temas como vocabulario, gramática, comprensión de lectura, y mucho más. ¡Mejora tu inglés de manera entretenida!</p>
+		<a routerLink="/lengua" class="btn btn-primary">Ir a la sección de Lengua Española</a>
+	  </div>
+	</div>
+  </section>
+  
+  <!-- Sección 3 -->
+  <section class="container my-5">
+	<div class="row">
+	  <div class="col-md-6">
+		<img src="../../../assets/img/gifnaturales.gif" alt="Ciencia" class="img-fluid">
+	  </div>
+	  <div class="col-md-6">
+		<h2>Ciencia</h2>
+		<p>En esta sección encontrarás juegos y actividades para aprender ciencias de una manera divertida y dinámica. Podrás repasar temas como biología, química, física, y mucho más. ¡Descubre el mundo que te rodea de una manera diferente!</p>
+		<a routerLink="/socia" class="btn btn-success">Ir a la sección de ciencia</a>
+	  </div>
+	</div>
+  </section>
+  
+  <!-- Sección 4 -->
+  <section class="container my-5">
+	<div class="row">
+	  <div class="col-md-6 order-md-2">
+		<img src="../../../assets/img/gifhistoriagif.gif.crdownload" alt="Historia" class="img-fluid">
+	  </div>
+	  <div class="col-md-6 order-md-1">
+		<h2>Historia</h2>
+		<p>En esta sección encontrarás juegos y actividades para aprender historia de una manera divertida y dinámica. Podrás repasar temas como historia de tu país, historia universal, personajes importantes, y mucho más. ¡Viaja en el tiempo y aprende de manera entretenida!</p>
+		<a routerLink="/ciencia" class="btn btn-warning">Ir a la sección de historia</a>
+	  </div>
+	</div>
+  </section>
 		
-		<button class="btn-dark" (click)="logout()">cerrar sesión</button>
-	</nav>
-
-	<div class="containerM">
-		<section id="matematicas">
-			<div class="row">
-				<div class="col-md-6">
-					<h2>Matemáticas</h2>
-					<p>En esta sección encontrarás información sobre matemáticas, sus características y aplicaciones.</p>
-					<ul>
-						<li>Álgebra</li>
-						<li>Geometría</li>
-						<li>Aritmética</li>
-					</ul>
-					<p>Si quieres ir a la sección de matematicas dale click al siguiente boton</p>
-					<button routerLink="/matematicas" type="button" class="btn btn-danger">Sesión de matematicas</button>
-
-				</div>
-				<div class="col-md-6">
-					<img src="../../../assets/img/mate.jpg" alt="Imagen de matemáticas" class="img-fluid">
-				</div>
-			</div>
-		</section>
-
-		<section id="naturales">
-			<div class="row">
-				<div class="col-md-6">
-					<h2>Ciencias naturales</h2>
-					<p>En esta sección encontrarás información sobre ciencias naturales, sus ramas y aplicaciones.</p>
-					<ul>
-						<li>Física</li>
-						<li>Química</li>
-						<li>Biología</li>
-					</ul>
-					
-					<button routerLink="/socia" type="button" class="btn btn-success">Ir a ciencias naturales</button>
-				</div>
-				<div class="col-md-6">
-					<img src="../../../assets/img/naturales.jpg" alt="Imagen de ciencias naturales" class="img-fluid">
-				</div>
-				</div>
-				</section>
-				<section id="espanol">
-					<div class="row">
-						<div class="col-md-6">
-							<h2>Lengua española</h2>
-							<p>En esta sección encontrarás información sobre la lengua española, su gramática y ortografía.</p>
-							<ul>
-								<li>Gramática</li>
-								<li>Ortografía</li>
-								<li>Vocabulario</li>
-							</ul>
-							
-							<p>Ir a la seccion de lengua española </p>
-							<button routerLink="/lengua" type="button" class="btn btn-primary">Ir a Lengua española</button>
-						</div>
-						<div class="col-md-6">
-							<img src="../../../assets/img/lengua.jpg" alt="Imagen de lengua española" class="img-fluid">
-						</div>
-					</div>
-				</section>
-			
-				<section id="sociales">
-					<div class="row">
-						<div class="col-md-6">
-							<h2>Ciencias sociales</h2>
-							<p>En esta sección encontrarás información sobre ciencias sociales, su historia y desarrollo.</p>
-							<ul>
-								<li>Historia</li>
-								<li>Economía</li>
-								<li>Sociología</li>
-							</ul>
-							
-							<button routerLink="/ciencia" type="button" class="btn btn-warning">Ir a ciencias sociales </button>
-						</div>
-						<div class="col-md-6">
-							<img src="../../../assets/img/sociales.jpg" alt="Imagen de ciencias sociales" class="img-fluid">
-						</div>
-					</div>
-				</section>
-			</div>
-			
-			<!-- Agregamos los archivos de JavaScript de Bootstrap -->
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
-			
-			
+<footer class="bg-dark text-light py-3">
+    <div class="container">
+        <p class="m-0 text-center">&copy; DTEA 2023</p>
+    </div>
+</footer>
