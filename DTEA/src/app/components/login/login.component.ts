@@ -27,9 +27,10 @@ constructor(private fb: FormBuilder ,  private afAuth : AngularFireAuth , privat
 
 
   ngOnInit(): void {
+    this.afAuth.signOut().then(()=> alert)
    
-  }
 
+  }
   login()
   {
     const correo = this.loginUsuario.value.email;
