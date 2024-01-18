@@ -5,44 +5,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Proyecto Educativo: Juegos Inclusivos para el Aprendizaje</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      line-height: 1.6;
-      margin: 20px;
-    }
-
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 1em;
-      text-align: center;
-    }
-
-    section {
-      margin-bottom: 20px;
-    }
-
-    h2 {
-      color: #4CAF50;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    footer {
-      margin-top: 20px;
-      background-color: #f1f1f1;
-      padding: 1em;
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body>
